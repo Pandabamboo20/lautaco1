@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de Lautaco - Streamer, músico y creador de contenido en Twitch, Instagram, YouTube, TikTok y Discord.">
+    <title>Lautaco - Página Oficial</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ccff33; /* Color de fondo */
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1600x900/?music,guitar') no-repeat center center/cover;
+            opacity: 0.2;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            color: #333;
+            letter-spacing: 4px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Buttons */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons a {
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background: linear-gradient(135deg, #00c6ff, #0072ff); /* Azul degradado */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            letter-spacing: 2px;
+        }
+
+        .cta-buttons a:hover {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Naranja degradado */
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Biography Section */
+        .bio {
+            padding: 80px 20px;
+            background-color: rgba(36, 36, 36, 0.85); /* Fondo ligeramente transparente */
+            text-align: center;
+            color: white;
+        }
+
+        .bio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0072ff;
+        }
+
+        .bio p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #bbbbbb;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            color: white;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            background-color: #00c6ff;
+        }
+
+        .social-links .twitch {
+            background-color: #6441a5;
+        }
+
+        .social-links .instagram {
+            background: radial-gradient(circle at 30% 30%, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        .social-links .youtube {
+            background-color: #ff0000;
+        }
+
+        .social-links .tiktok {
+            background-color: #69c9d0;
+        }
+
+        .social-links .discord {
+            background-color: #7289da;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #141414;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lautaco</h1>
+    <p>Streamer | Músico | Creador de Contenido</p>
+    <div class="cta-buttons">
+        <a href="https://www.twitch.tv/lautaco" target="_blank">Twitch</a>
+        <a href="https://www.youtube.com/@lautaco" target="_blank">YouTube</a>
+        <a href="https://www.tiktok.com/@lautac0" target="_blank">TikTok</a>
+    </div>
+</header>
+
+<section class="bio">
+    <h2>Sobre mí</h2>
+    <p>¡Bienvenidos a la página oficial de Lautaco! Soy un apasionado creador de contenido y músico, enfocado en el mundo del gaming y el entretenimiento. En mi canal de Twitch podrás disfrutar de partidas en vivo y en YouTube encontrarás videos relacionados con música y gaming. Además, no te pierdas mis videos en TikTok y únete a mi comunidad en Discord para estar en contacto conmigo y otros seguidores. ¡Sigue mis redes y no te pierdas nada!</p>
+    
+    <div class="social-links">
+        <a href="https://www.twitch.tv/lautaco" class="twitch" target="_blank">T</a>
+        <a href="https://www.instagram.com/lautaco_/" class="instagram" target="_blank">I</a>
+        <a href="https://www.youtube.com/@lautaco" class="youtube" target="_blank">Y</a>
+        <a href="https://www.tiktok.com/@lautac0" class="tiktok" target="_blank">TT</a>
+        <a href="https://discord.com/invite/egDXs4TSVK" class="discord" target="_blank">D</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Lautaco. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
